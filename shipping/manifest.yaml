@@ -9,7 +9,7 @@ metadata:
     component: shipping
 data:
   CART_ENDPOINT: "cart:8080"
-  DB_HOST: mysql
+  DB_HOST: "mysql"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -63,7 +63,6 @@ spec:
             port: 8080
           initialDelaySeconds: 50
           periodSeconds: 30
-          failureThreshold: 30
 
         livenessProbe:
           httpGet:
