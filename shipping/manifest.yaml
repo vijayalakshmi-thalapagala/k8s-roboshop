@@ -43,11 +43,11 @@ spec:
         imagePullPolicy: Always # safe to pull everytime, there may be images with same version rebuilt and pushed
         resources:
           requests:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "150m"
+            memory: "256Mi"
           limits:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "150m"
+            memory: "256Mi"
         readinessProbe:
           # httpGet:
           #   path: /health
